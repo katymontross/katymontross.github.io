@@ -1,3 +1,13 @@
+/* colorscheme: https://coolors.co/696047-fae3e3-f7d4bc-000000-8c6057 */
+
+:root {
+    --black: #000000;
+    --rose-taupe: #8C6057;
+    --unbleached-silk: #F7D4BC;
+    --misty-rose: #FAE3E3;
+    --raw-umber: #696047;
+  }
+
 @media only screen and (max-width: 600px) {
     .logo-img {
         width: 70%;
@@ -27,7 +37,7 @@ header {
     align-content: center;
 }
 
-nav a:hover {
+/* nav a:hover {
     color: #8C6057;
 }
 
@@ -44,7 +54,15 @@ nav ul li a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
+} */
+
+/* nav a {
+    color: var(--black);
 }
+
+nav a:hover {
+    color: var(--rose-taupe);
+} */
 
 .logo-img {
     width: 35%;
@@ -70,10 +88,123 @@ nav ul li a {
 }
 
 .content-div {
-    max-width: 75%;
 }
 
 .img-table-img {
     width: 75%;
     height: 50%;
+}
+
+.btn-colorized {
+    background-color: var(--unbleached-silk);
+}
+
+.btn-colorized:hover {
+    background-color: var(--rose-taupe); 
+}
+
+/* polaroid */
+
+@IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
 }
