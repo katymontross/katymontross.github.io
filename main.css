@@ -104,6 +104,15 @@ nav a:hover {
     background-color: var(--rose-taupe); 
 }
 
+.about-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 30%;
+}
+
 /* polaroid */
 
 @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
