@@ -11,22 +11,26 @@
         </script>
     </head>
     <body>
-        <h1>Contact Me</h1>
+      <!-- <main class="justify-content-center"> -->
 
-        <form action="/action_page.php" class="shadow p-3 mb-5 bg-white rounded">
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-              <label for="txt">Message:</label>
-              <input type="text" class="form-control" id="message-text">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+      <div class="contact-form shadow p-3 mb-5 bg-white rounded">
+        <h2>Contact Me</h2>
+        <br>
+        <form action="/action_page.php" class="">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+              <input type="email" class="form-control contact-input" id="email">
+          </div>
+          <div class="form-group">
+            <label for="txt">Message:</label>
+              <input type="text" class="form-control contact-message" id="message-text">
+          </div>
+          <br>
+            <button type="submit" class="btn btn-colorized">Submit</button>
+        </form>
+      </div>
+
+    <!-- </main> -->
 
     <!-- Calendly inline widget begin -->
     <div class="calendly-inline-widget" id="calendly-div" style="min-width:320px;height:580px;" data-auto-load="true">
